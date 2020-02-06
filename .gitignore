@@ -3,6 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Also ignore.
+Anaconda Prompt (PythonData).lnk
+config.py
+chromedriver.exe
+index.html
+PracticeScraping.ipynb
+.vscode/
+
 # C extensions
 *.so
 
