@@ -25,19 +25,20 @@ mongo = PyMongo(app)
 @app.route("/")
 # define index function 
 def index():
-    mars=mongo.db.mars.find_one #Use the mongo mars db. Created via command line: use mars_app
+   mars=mongo.db.mars.find_one() #Use the mongo mars db. Created via command line: use mars_app
     # tells Flask to return HTML template using index.html
     # tells Python to use the "mars" collection in the MongoDB
     ##!! Essentially: Flask: use index.html template to return Python call to Mongo db mars
-    return render_template("index.html", mars=mars)
+   return render_template("index.html", mars=mars)
+   
 
 ## Scraping Route
 # define Flask route, /scrape with will run our function
 @app.route("/scrape")
 def scrape():
-   mars = mongo.db.mars # point to our mongo mars db
-   mars_data = scrape_mars.scrape_all() # variable to hold the scrap
-   mars.update({}, mars_data, upsert=True) # update mars db with data.
+   mars = mongo.db.mars 
+   mars_data = scraping.scrape_all() 
+   mars.update({}, mars_data, upsert=True) 
    return "Scraping Successful!"
 
 if __name__ == "__main__":

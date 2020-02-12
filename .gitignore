@@ -10,6 +10,10 @@ chromedriver.exe
 index.html
 PracticeScraping.ipynb
 .vscode/
+ChallengeEfforts/
+ClassLesson/
+templates/
+ChallengeModule10/
 
 # C extensions
 *.so
