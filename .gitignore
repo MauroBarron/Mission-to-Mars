@@ -7,12 +7,12 @@ __pycache__/
 Anaconda Prompt (PythonData).lnk
 config.py
 chromedriver.exe
-index.html
 PracticeScraping.ipynb
 .vscode/
 ChallengeEfforts/
 ClassLesson/
 ChallengeModule10/
+templateshold/
 
 # C extensions
 *.so
